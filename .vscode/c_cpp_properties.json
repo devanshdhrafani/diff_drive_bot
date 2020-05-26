@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ipro/ros_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ipro/ros_ws/src/diff_drive_bot/include/**",
+        "/home/ipro/ros_ws/src/learning_tf/include/**",
+        "/home/ipro/ros_ws/src/ros_basics_tutorials/include/**",
+        "/home/ipro/ros_ws/src/ros_essentials_cpp/include/**",
+        "/home/ipro/ros_ws/src/ros_service_assignment/include/**",
+        "/home/ipro/ros_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/ipro/ros_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/opt/ros/melodic/share/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/usr/bin/python",
+    "python.linting.enabled": false,
+    "python.autoComplete.extraPaths": [
+        "/home/ipro/ros_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "cmake.configureOnOpen": true
+}
