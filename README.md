@@ -62,13 +62,19 @@ This package uses the [ROS Navigation stack](http://wiki.ros.org/navigation) to 
 To make it easier to map environments, I added a joystick_teleop node to control the robot movement using my xbox controller. If you are using some other controller, you can easily map your buttons:
 
 1. Install the ROS [joy](http://wiki.ros.org/joy) package:
-	``` $ sudo apt-get install ros-melodic-joy``` 
+	``` 
+    $ sudo apt-get install ros-melodic-joy
+    ``` 
 2. Connect your Jotstick to your machine and check if its detected:
-	```	$ ls /dev/input/```
+	```	
+    $ ls /dev/input/
+    ```
 3. If everything worked, your joystick should show up as jsX. In my case, it showed up as js1.
 4. Go to ```/launch/joy_teleop_launch.launch``` and edit the dev parameter value to ```/dev/input/jsX```.
 5. Open the ```joy_teleop.py``` script in the ```/scripts/``` folder.
 6.  Uncomment the print statements in the ```joyCallback()``` function.
 7. Save and run the script using:
-	```$ roslaunch diff_drive_robot joy_teleop_launch.launch ```
+	```
+    $ roslaunch diff_drive_robot joy_teleop_launch.launch 
+    ```
 8. You will see 2 arrays corresponding to the axes and buttons of your Joystick. Press each button/stick and find the index of your controls. Change the ```joy_teleop.py``` script with your respective axes.
