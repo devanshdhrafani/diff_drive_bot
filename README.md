@@ -26,7 +26,7 @@ The package uses [slam_gmapping](http://wiki.ros.org/slam_gmapping) to map the e
 
 1. Load the robot in the Gazebo environment. Default model is the turtlebot3_house. You can change this from ```/worlds/mybot.world```. To continue with default model:
 	```
-	 roslaunch diff_drive_bot gazebo.launch 
+	$ roslaunch diff_drive_bot gazebo.launch 
 	```
 2. Launch the **slam_gmapping** node. This will also start **rviz** where you can visualize the map being created:
 	```
