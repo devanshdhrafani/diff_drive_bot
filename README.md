@@ -1,7 +1,8 @@
 
 # diff_drive_bot
 
-This ROS package implements SLAM on a 2 wheeled differential drive robot to map an unknown environment. This map is then used for autonomous navigation using the ROS Navigation stack.
+This ROS package implements SLAM on a 2 wheeled differential drive robot to map an unknown environment. A joystick is used to teleoperate the robot in Gazebo. The map generated is then used for autonomous navigation using the ROS Navigation stack.
+[Demo Video](https://youtu.be/jbd2p1llsqA)
 
 ## Installation
 1. Build package from source: navigate to the source folder of your catkin workspace and build this package using:
