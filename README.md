@@ -19,6 +19,9 @@ This ROS package implements SLAM on a 2 wheeled differential drive robot to map 
 ## Simultaneous Localization And Mapping (SLAM)
 
 The package uses [slam_gmapping](http://wiki.ros.org/slam_gmapping) to map the environment. For the purpose of this demonstration, we use the Gazebo simulation environment to move around the robot. 
+
+![SLAM Screenshot](https://raw.githubusercontent.com/devanshdhrafani/diff_drive_bot/master/screenshots/slam_gmapping.png)
+
 1. Load the robot in the Gazebo environment. Default model is the turtlebot3_house. You can change this from ```/worlds/mybot.world```. To continue with default model:
 	```
 	 roslaunch diff_drive_bot gazebo.launch 
@@ -45,6 +48,8 @@ The package uses [slam_gmapping](http://wiki.ros.org/slam_gmapping) to map the e
 	
 ## Autonomous Navigation
 This package uses the [ROS Navigation stack](http://wiki.ros.org/navigation) to autonomously navigate through the map created using gmapping. 
+
+![Navigation](https://raw.githubusercontent.com/devanshdhrafani/diff_drive_bot/master/screenshots/autonomous_navigation.png)
   
 0. To use your generated map, edit ```/launch/amcl_move_base.launch``` and add map .yaml location and name to map_server node launch.
 1. Load the robot in gazebo environment:
