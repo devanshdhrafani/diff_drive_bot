@@ -22,7 +22,7 @@ This ROS package implements SLAM on a 2 wheeled differential drive robot to map 
 
 The package uses [slam_gmapping](http://wiki.ros.org/slam_gmapping) to map the environment. For the purpose of this demonstration, we use the Gazebo simulation environment to move around the robot. 
 
-![SLAM Screenshot](https://raw.githubusercontent.com/devanshdhrafani/diff_drive_bot/master/screenshots/slam_gmapping.png)
+![SLAM Screenshot](https://github.com/devanshdhrafani/diff_drive_bot/raw/master/screenshots/slam_gmapping_resized.gif)
 
 1. Load the robot in the Gazebo environment. Default model is the turtlebot3_house. You can change this from ```/worlds/mybot.world```. To continue with default model:
 	```
