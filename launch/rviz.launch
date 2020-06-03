@@ -1,0 +1,19 @@
+<launch>
+  <arg name="scan_topic"  default="/mybot/laser/scan" />
+  <arg name="base_frame"  default="chassis"/>
+  <arg name="odom_frame"  default="odom"/>
+  
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find diff_drive_bot)/urdf/mybot.xacro'"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="False"/>
+  </node>  
+
+  <!--Publish robot state and transforms-->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"></node>
+  
+  <!--Launch rviz-->
+  <node pkg="rviz" type="rviz" name="rviz"
+  args="-d $(find diff_drive_bot)/rviz/rviz.rviz"></node>
+
+</launch>
